@@ -21,9 +21,8 @@ def tweet(message):
     except tweepy.TweepError as e:
         print(e.reason)
     finally:
-        # Try again in 1 hour
-        # sleep(3600)
-        sleep(10)
+        # Try again in 2 hours
+        sleep(2 * 3600)
 
 
 def main():
