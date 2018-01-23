@@ -20,7 +20,7 @@ def tweet(message):
         api.update_status(message)
     except tweepy.TweepError as e:
         print(e.reason)
-    finally:
+    else:
         # Try again in 2 hours
         sleep(1 * 3600)
 
