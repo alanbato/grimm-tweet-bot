@@ -22,7 +22,7 @@ def tweet(message):
         print(e.reason)
     finally:
         # Try again in 2 hours
-        sleep(2 * 3600)
+        sleep(1 * 3600)
 
 
 def main():
