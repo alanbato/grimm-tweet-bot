@@ -30,7 +30,7 @@ def main():
     grimm_lines = grimm_file.readlines()
     grimm_file.close()
     for line in grimm_lines:
-        tweet(line)
+        tweet(line.strip())
     print('The end!')
     tweet('The End!')
 
